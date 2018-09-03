@@ -30,8 +30,8 @@ class App < Sinatra::Base
     @difference = @num1 - @num2
     @product = @num1 * @num2
     @dividend = @num1 / @num2
-    
-    if params[:operation] == "add"
+
+    if @operation == "add"
       "#{@sum}"
     elsif params[:operation] == "subtract"
       "#{@difference}"
