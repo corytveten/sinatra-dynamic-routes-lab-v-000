@@ -33,11 +33,11 @@ class App < Sinatra::Base
 
     if @operation == "add"
       "#{@sum}"
-    elsif params[:operation] == "subtract"
+    elsif @operation == "subtract"
       "#{@difference}"
-    elsif params[:operation] == "multiply"
+    elsif @operation == "multiply"
       "#{@product}"
-    elsif params[:operation] == "divide"
+    elsif @operation == "divide"
       "#{@dividend}"
     end
   end
